@@ -3,17 +3,15 @@ namespace App\Controllers;
 
 class AppController extends Controller {
     public function index() {
-        print 'hello AppController';
-        $this->view->render('index');
+        $this->view->render('pages/index');
     }
 
     public function login() {
-        print 'Hello login AppController';
-        $this->view->render('login');
+        $this->view->render('pages/login');
     }
 
     public function attemptLogin() {
         $params = $this->getFormData();
-        print_r($params->password);
+        print_r($params);
     }
 }

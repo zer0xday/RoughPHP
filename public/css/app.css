@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+section {
+    flex: 1;
+    height: 95vh;
+}
+
+section>a {
+    margin: 25px;
+    color: white;
+    background: white;
+    color: black;
+}
+
+section:first-child {
+    background: #333;
+}
+
+section:last-child {
+    background: #666;
+}

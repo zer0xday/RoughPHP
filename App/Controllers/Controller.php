@@ -1,13 +1,14 @@
 <?php
 namespace App\Controllers;
 
+require 'App/Viewer/Viewer.php';
 use \App\Viewer\Viewer as View;
 
 class Controller {
     protected $view;
 
     public function __construct() {
-        $this->view = new View;
+        $this->view = new View();
     }
 
     protected function getFormData() {
